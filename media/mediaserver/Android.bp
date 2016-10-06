@@ -62,6 +62,7 @@ cc_binary {
     name: "mediaserver",
     defaults: [
                 "mediaserver_defaults",
+                "camera_in_mediaserver_defaults",
               ],
     srcs: ["main_mediaserver.cpp"],
     init_rc: ["mediaserver.rc"],

@@ -42,6 +42,7 @@ cc_library_shared {
         "needs_camera_boottime_defaults",
         "no_cameraserver_defaults",
         "camera_needs_client_info_defaults",
+        "camera_needs_client_info_lib_defaults",
     ],
 
     // Camera service source

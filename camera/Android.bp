@@ -45,7 +45,6 @@ license {
 
 cc_library_shared {
     name: "libcamera_client",
-    defaults: ["camera_parameter_library_defaults"],
 
     aidl: {
         export_aidl_headers: true,
@@ -64,6 +63,7 @@ cc_library_shared {
         // Source for camera interface parcelables, and manually-written interfaces
         "Camera.cpp",
         "CameraMetadata.cpp",
+        "CameraParameters.cpp",
         "CaptureResult.cpp",
         "CameraParameters2.cpp",
         "CameraSessionStats.cpp",
@@ -107,16 +107,6 @@ cc_library_shared {
         "-Wall",
         "-Wextra",
     ],
-
-}
-
-cc_library_static {
-    name: "libcamera_parameters",
-
-    export_include_dirs: [
-        "include",
-    ],
-    srcs: ["CameraParameters.cpp"],
 
 }
 
